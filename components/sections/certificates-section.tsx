@@ -7,9 +7,9 @@ import GlassCard from "@/components/ui/glass-card";
 import { homepageContent } from "@/data/homepage-content";
 
 const imageMap = [
-  "/images/pic1.png",
-  "/images/pic1.png",
-  "/images/pic1.png",
+  "/images/cert1.png",
+  "/images/cert2.png",
+  "/images/cert3.png",
 ];
 
 export default function CertificatesSection() {

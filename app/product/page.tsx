@@ -27,17 +27,17 @@ const aiCards = [
   {
     step: "01",
     title: "Manual Measurement Input",
-    image: "/images/product-ai-1.png",
+    image: "/images/product5.png",
   },
   {
     step: "02",
     title: "Data Analysis",
-    image: "/images/product-ai-2.png",
+    image: "/images/product6.png",
   },
   {
     step: "03",
     title: "Tailored Production",
-    image: "/images/product-ai-3.png",
+    image: "/images/product7.png",
   },
 ];
 
@@ -49,7 +49,7 @@ export default function ProductPage() {
         <section className="overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-100">
           <div className="relative min-h-[300px] overflow-hidden md:min-h-[380px]">
             <Image
-              src="/images/product-hero.png"
+              src="/images/pic2.png"
               alt="UniqHelm product hero"
               fill
               priority
@@ -95,7 +95,7 @@ export default function ProductPage() {
           <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-100">
             <div className="relative aspect-[1/1] w-full">
               <Image
-                src="/images/product-foam.png"
+                src="/images/product4.png"
                 alt="PU Foam material"
                 fill
                 className="object-cover"

@@ -140,7 +140,7 @@ export default function AISizingSection() {
             <div className="overflow-hidden rounded-[1.5rem] border border-dashed border-slate-300 bg-slate-100">
               <div className="relative aspect-[1.45/0.78] w-full">
                 <Image
-                  src="/images/ai-panel-demo.png"
+                  src="/images/measure4.png"
                   alt="AI sizing demo visual"
                   fill
                   className="object-cover"

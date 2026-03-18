@@ -7,9 +7,9 @@ import GlassCard from "@/components/ui/glass-card";
 import { homepageContent } from "@/data/homepage-content";
 
 const imageMap = [
-  "/images/pic1.png",
-  "/images/pic1.png",
-  "/images/pic1.png",
+  "/images/product1.png",
+  "/images/product2.jpg",
+  "/images/product3.png",
 ];
 
 export default function ProductStorySection() {

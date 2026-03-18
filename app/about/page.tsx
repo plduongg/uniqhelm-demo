@@ -47,7 +47,7 @@ export default function AboutPage() {
         <section className="overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-100">
           <div className="relative min-h-[290px] overflow-hidden md:min-h-[360px]">
             <Image
-              src="/images/about-hero.png"
+              src="/images/about1.png"
               alt="UniqHelm about hero"
               fill
               priority
@@ -152,7 +152,7 @@ export default function AboutPage() {
                   <div className="grid grid-cols-2 gap-3">
                     <div className="relative aspect-square w-full">
                       <Image
-                        src="/images/pic1.png"
+                        src="/images/brand1.jpg"
                         alt="Product detail visual 1"
                         fill
                         className="object-contain scale-90"
@@ -161,7 +161,7 @@ export default function AboutPage() {
 
                     <div className="relative aspect-square w-full">
                       <Image
-                        src="/images/pic1.png"
+                        src="/images/brand2.jpg"
                         alt="Product detail visual 2"
                         fill
                         className="object-contain scale-90"
@@ -171,7 +171,7 @@ export default function AboutPage() {
 
                   <div className="relative aspect-[1/1.05] w-full">
                     <Image
-                      src="/images/pic1.png"
+                      src="/images/pic2.png"
                       alt="Helmet use visual"
                       fill
                       className="object-contain"
@@ -188,7 +188,7 @@ export default function AboutPage() {
           <div className="relative overflow-hidden rounded-[2rem] border border-slate-200 bg-slate-100">
             <div className="relative aspect-[1.15/0.95] w-full">
               <Image
-                src="/images/about-ai.png"
+                src="/images/about2.png"
                 alt="AI innovation visual"
                 fill
                 className="object-cover"

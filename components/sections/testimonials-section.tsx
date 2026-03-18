@@ -6,9 +6,9 @@ import GlassCard from "@/components/ui/glass-card";
 import { homepageContent } from "@/data/homepage-content";
 
 const avatarMap = [
-  "/images/pic1.png",
-  "/images/pic1.png",
-  "/images/pic1.png",
+  "/images/avt.jpg",
+  "/images/avt.jpg",
+  "/images/avt.jpg",
 ];
 
 export default function TestimonialsSection() {

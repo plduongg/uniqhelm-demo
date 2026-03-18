@@ -218,21 +218,21 @@ export const homepageContent = {
       title: "PU Foam: Softer Comfort, Greater Durability",
       description:
         'Don’t let stiff padding disrupt your ride. UniqHelm features next-generation high-density PU Foam with smart elasticity.',
-      image: "/images/pic1.png",
+      image: "/images/deploy1.png",
     },
     {
       eyebrow: "",
       title: "Safety Commitment & Dedicated Guidance",
       description:
         "Your safety comes first. UniqHelm offers clear installation guidance and trusted material standards, so you can ride with greater confidence and peace of mind.",
-      image: "/images/pic1.png",
+      image: "/images/deploy2.png",
     },
     {
       eyebrow: "",
       title: "AI-Powered Sizing System",
       description:
         "We eliminate the guesswork of online shopping, so customers can choose the right fit with confidence.",
-      image: "/images/pic1.png",
+      image: "/images/deploy3.png",
     },
   ],
 },

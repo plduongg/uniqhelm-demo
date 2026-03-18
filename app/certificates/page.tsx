@@ -14,21 +14,21 @@ const certificateItems = [
     title: "Material Safety",
     description:
       "Documentation that highlights material standards, safety considerations, and verified sourcing behind the product.",
-    image: "/images/certificate-1.png",
+    image: "/images/cert1.png",
     href: "#",
   },
   {
     title: "Product Validation",
     description:
       "A dedicated area for internal testing, technical standards, inspection reports, and fit-related data that support product credibility.",
-    image: "/images/certificate-2.png",
+    image: "/images/cert2.png",
     href: "#",
   },
   {
     title: "Manufacturing Quality",
     description:
       "An overview of production processes, quality control practices, and manufacturing capabilities where applicable.",
-    image: "/images/certificate-3.png",
+    image: "/images/cert3.png",
     href: "#",
   },
 ];
