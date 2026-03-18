@@ -1,75 +1,60 @@
 export const homepageContent = {
   hero: {
-    badge: "AI sizing + comfort-focused helmet liner",
-    titlePrefix: "Website trình diễn sản phẩm",
-    highlight: "đủ ấn tượng để kể câu chuyện",
-    titleSuffix: "và dẫn khách hàng đến quyết định mua.",
+    titlePrefix: "Redefining the perfect fit",
+    highlight: "with AI technology",
+    titleSuffix: "to deliver endless comfort.",
     description:
-      "Đây là frontend định hướng startup công nghệ vật liệu: hiện đại, giàu hiệu ứng, có luồng AI sizing, giải thích chất liệu PU Foam, khu vực chứng nhận và CTA dẫn sang sàn thương mại điện tử.",
-    primaryCta: "Try AI Sizing",
+      "By combining our proprietary AI Sizing technology with PU Foam, we create a helmet liner for you. Leave discomfort behind and enjoy a smoother, more comfortable ride.",
+    primaryCta: "Try A.I. Sizing",
     secondaryCta: "Explore Product Story",
-    mockup: {
-      eyebrow: "AI Size Scan",
-      title: "Helmet Liner Fit Demo",
-      live: "Live UI",
-      alignmentTitle: "Scanning alignment",
-      alignmentDescription: "Adjust lighting and keep your head centered",
-      predictedSize: "Predicted size",
-      predictedValue: "M / 8mm",
-      confidence: "Confidence",
-      confidenceValue: "94%",
-      capture: "Capture",
-      analyze: "Analyze",
-      result: "Result",
-    },
   },
 
   metrics: [
-    { value: "3 bước", label: "trải nghiệm AI sizing" },
-    { value: "PU Foam", label: "vật liệu lõi" },
-    { value: "24/7", label: "demo scan luôn sẵn sàng" },
-    { value: "Multi-market", label: "dẫn mua qua sàn TMĐT" },
+    { value: "3 Steps", label: "Try A.I. Sizing" },
+    { value: "PU Foam", label: "Core Material" },
+    { value: "24/7", label: "Always ready to serve" },
+    { value: "Buy easier", label: "On E-Commerces" },
   ],
 
   highlights: [
     {
-      title: "PU Foam Comfort Layer",
+      title: "PU Foam Layer",
       description:
-        "Tăng độ êm, phân tán áp lực và cải thiện cảm giác đội mũ trong thời gian dài.",
+        "Provides better cushioning, even pressure distribution, and greater comfort during extended wear.",
     },
     {
       title: "Better Fit, Less Shake",
       description:
-        "Hỗ trợ cải thiện độ ôm, giảm cảm giác lỏng và rung lắc khi di chuyển.",
+        "Improves helmet fit for a more secure feel with less shifting and vibration on the move.",
     },
     {
       title: "AI Size Recommendation",
       description:
-        "AI hỗ trợ phân tích dữ liệu đo và gợi ý size liner phù hợp hơn cho từng người dùng.",
+        "AI analyzes measurement data to suggest the liner size that best fits users.",
     },
   ],
 
   brandStory: {
     eyebrow: "Brand Story",
-    title: "A comfort-tech brand for the next generation of helmet users",
+    title: "The “Comfort-Tech” revolution for everyday riders.",
     description:
-      "This section helps your homepage feel like a real startup website, not just a product demo. It gives visitors context, mission, and emotional connection.",
+      "More than just an accessory, UniqHelm represents a commitment to safety and uncompromised riding comfort. By combining material science with innovation, we tackle the biggest pain points of helmet users.",
     cta: "Explore Brand Story",
     points: [
       {
-        title: "Born from a real discomfort problem",
+        title: "Born to eliminate discomfort",
         description:
-          "Helmet users often experience pressure, discomfort, and unstable fit during long wear.",
+          "Temple pain, helmet shake, and sweaty discomfort are no longer normal. Our helmet liner was built from real rider feedback.",
       },
       {
-        title: "Built around comfort and trust",
+        title: "Premium Material Standards",
         description:
-          "The product story focuses on material quality, compatibility, and confidence through certificates.",
+          "High-density PU Foam for durability, hygiene, and broad helmet compatibility.",
       },
       {
         title: "Made smarter with AI sizing",
         description:
-          "Instead of guessing thickness manually, users can experience a more modern recommendation flow.",
+          "Our proprietary A.I. Sizing analyzes biometric data to recommend your ideal liner fit.",
       },
     ],
   },
@@ -78,82 +63,114 @@ export const homepageContent = {
     eyebrow: "How it works",
     title: "A simple flow from curiosity to confidence",
     description:
-      "This section helps visitors understand exactly what happens on the website and what they should do next.",
+      "This section helps customers see how easy it is to upgrade their helmet without any hassle.",
     steps: [
       {
         step: "01",
         title: "Explore the product",
         description:
-          "Understand the comfort problem, the PU Foam solution, and why the fit experience matters.",
+          "See how our high-density PU Foam overcomes the limits of traditional helmet liners for superior comfort.",
       },
       {
         step: "02",
         title: "Try AI sizing",
         description:
-          "Experience a guided recommendation flow instead of guessing liner size manually.",
+          "No more manual measuring or guesswork. Our A.I. recommends the ideal liner fit for secure, lasting comfort.",
       },
       {
         step: "03",
         title: "Buy on marketplace",
         description:
-          "Move to your preferred marketplace channel when you are ready to purchase.",
+          "With your A.I. sizing ready, simply order on E-Commerces and receive your product with easy installation instructions.",
       },
     ],
   },
 
   productStory: {
-    eyebrow: "Product Story",
-    title: "Từ nỗi đau khi đội mũ lâu đến trải nghiệm fit thông minh hơn",
+    eyebrow: "Products & Solutions",
+    title: "From long-ride discomfort to a smarter fit experience",
     description:
-      "Section này đóng vai trò kể câu chuyện sản phẩm, giải thích vì sao PU Foam liner đáng chú ý và vì sao AI sizing là sự khác biệt quan trọng thay vì chỉ là hiệu ứng marketing.",
+        "A helmet should never feel like a burden. UniqHelm makes every ride more comfortable with personalized algorithms and advanced material science.",
     features: [
-      {
-        title: "Long-wear comfort",
+        {
+        title: "Lasting comfort",
+        subtitle: "For every long ride",
         text:
-          "Tập trung vào cảm giác thoải mái cho người đội mũ bảo hiểm lâu: đi làm, giao hàng, touring, commuting.",
-      },
-      {
+            "From long-distance riders to daily commuters, UniqHelm helps eliminate discomfort caused by a poor helmet fit.",
+        },
+        {
         title: "Adaptive fit support",
+        subtitle: "For a better fit",
         text:
-          "Giúp mũ cho cảm giác vừa vặn hơn với từng người dùng nhờ các tuỳ chọn độ dày và gợi ý size bằng AI.",
-      },
-      {
+            "Our A.I. recommends the right liner size to help create a snugger, more stable, and more comfortable fit.",
+        },
+        {
         title: "Material-first design",
+        subtitle: "For superior durability",
         text:
-          "Nêu bật chất liệu PU Foam như nền tảng của trải nghiệm êm, ổn định và hiện đại hơn so với cách chọn thủ công.",
-      },
+            "We chose high-density PU Foam as our core material for better breathability, comfort, and pressure distribution.",
+        },
     ],
   },
+
+  productBenefits: {
+  eyebrow: "Benefits",
+  title: "Why you will need UniqHelm from your very first try",
+  description:
+    "A good helmet alone is not enough. You deserve a smoother, less tiring ride powered by technology built for your comfort.",
+  items: [
+    {
+      title: "Softer long-wear experience",
+      description:
+        "Designed to reduce pressure points for a more comfortable journey.",
+    },
+    {
+      title: "More refined fit feeling",
+      description:
+        "Supports a more stable, secure, and premium-feeling interior fit.",
+    },
+    {
+      title: "More premium product story",
+      description:
+        "Positions the brand as comfort-tech innovation, not just an accessory.",
+    },
+    {
+      title: "Modern recommendation flow",
+      description:
+        "AI sizing creates a confidence-driven user experience before purchase.",
+    },
+  ],
+},
 
   aiSizing: {
     eyebrow: "AI Measure Size",
     title:
-      "Một trải nghiệm AI sizing đủ đẹp để gây ấn tượng, đủ rõ để tăng niềm tin",
+      "Experience the fit, powered by A.I.",
     description:
-      "Bạn có thể dùng section này như demo front-end ngay từ bây giờ. Sau này chỉ cần nối API model thật vào form và camera workflow là có thể thành một trải nghiệm hoàn chỉnh.",
+      "Don’t leave your comfort and safety to guesswork. Let UniqHelm’s AI discover the perfect fit for you.",
 
     steps: [
       {
         title: "Capture",
         description:
-          "Người dùng mở camera hoặc tải ảnh theo hướng dẫn ánh sáng, góc chụp và khoảng cách.",
+          "You can open your camera or upload photos by following simple guidance on lighting, angle, and distance.",
       },
       {
         title: "Analyze",
         description:
-          "Hệ thống AI phân tích dữ liệu đo đầu hoặc form fit để suy ra gợi ý độ dày hoặc size liner phù hợp.",
+          "The A.I. system analyzes head measurement data to suggest the best-fitting liner size.",
       },
       {
         title: "Recommend",
         description:
-          "Trả về size đề xuất, độ tự tin của kết quả và CTA dẫn sang Shopee hoặc Lazada để mua.",
+          "Displays the recommended size, confidence score, and a CTA to purchase on E-Commerces.",
       },
     ],
 
     panel: {
-      eyebrow: "Interactive demo",
-      title: "Mock AI Sizing Panel",
-      badge: "Frontend-ready",
+      eyebrow: "Demo",
+      title: "AI Sizing Panel",
+      badge: "Ready",
       tabs: {
         camera: "Camera Scan",
         upload: "Upload Image",
@@ -171,7 +188,7 @@ export const homepageContent = {
       cameraTitle: "Ready for guided camera scan",
       uploadTitle: "Upload front / side images for analysis",
       description:
-        "Bản demo này mô phỏng camera zone, upload state và kết quả phân tích. Bạn chỉ cần nối backend thật sau.",
+        "This demo illustrates the camera zone, upload flow, and analysis results.",
       cameraButton: "Open Camera",
       uploadButton: "Upload Photos",
     },
@@ -190,30 +207,60 @@ export const homepageContent = {
     },
   },
 
+  implementationProcess: {
+  eyebrow: "Deployment Process",
+  title: "Implementation Process",
+  description:
+    "From consultation to deployment, we ensure smooth implementation.",
+  items: [
+    {
+      eyebrow: "",
+      title: "PU Foam: Softer Comfort, Greater Durability",
+      description:
+        'Don’t let stiff padding disrupt your ride. UniqHelm features next-generation high-density PU Foam with smart elasticity.',
+      image: "/images/pic1.png",
+    },
+    {
+      eyebrow: "",
+      title: "Safety Commitment & Dedicated Guidance",
+      description:
+        "Your safety comes first. UniqHelm offers clear installation guidance and trusted material standards, so you can ride with greater confidence and peace of mind.",
+      image: "/images/pic1.png",
+    },
+    {
+      eyebrow: "",
+      title: "AI-Powered Sizing System",
+      description:
+        "We eliminate the guesswork of online shopping, so customers can choose the right fit with confidence.",
+      image: "/images/pic1.png",
+    },
+  ],
+},
+
   certificates: {
     eyebrow: "Certificates",
     title:
-      "Đừng chỉ đưa file PDF, hãy biến chứng nhận thành một phần của câu chuyện tin cậy",
+      "Don’t just take our word for it, see how we’re certified.",
     description:
-      "Section này mô phỏng cách bạn có thể trình bày chứng nhận theo card, có tiêu đề rõ ràng, có giải thích ngắn gọn và có CTA xem chi tiết.",
+      "At UniqHelm, safety is not built on promises. It is built on rigorous testing and strict material standards trusted in the protective gear industry.",
     ctaLabel: "View detail",
     items: [
       {
         title: "Material Safety",
         description:
-          "Giải thích tài liệu chứng minh vật liệu, độ an toàn và nguồn gốc kiểm định.",
+          "...",
         href: "/certificates",
       },
       {
         title: "Product Validation",
         description:
-          "Khu vực trình bày test nội bộ, tiêu chuẩn kỹ thuật, báo cáo kiểm tra hoặc dữ liệu đánh giá fit.",
+          "...",
         href: "/certificates",
       },
       {
         title: "Manufacturing Quality",
         description:
-          "Phần mô tả quy trình sản xuất, kiểm soát chất lượng và năng lực nhà máy nếu có.",
+          "...",
         href: "/certificates",
       },
     ],
@@ -221,25 +268,25 @@ export const homepageContent = {
 
   faq: {
     eyebrow: "FAQ / Support",
-    title: "Các câu hỏi nên có để tăng niềm tin trước khi dẫn sang sàn",
+    title: "Frequently Asked Questions",
     description:
-      "Khi sản phẩm còn mới lạ, FAQ đóng vai trò rất lớn. Nó giúp xử lý hoài nghi về chất liệu, độ tương thích, cách đo size và phạm vi sử dụng.",
+      "Have questions? UniqHelm is here to provide the answers you need, so you can move forward with complete confidence.",
     items: [
       {
-        q: "Sản phẩm này có thay đổi kết cấu an toàn của mũ bảo hiểm không?",
-        a: "Website nên trình bày rất rõ rằng sản phẩm tập trung vào tăng cảm giác thoải mái và độ vừa vặn. Bạn có thể bổ sung tuyên bố phạm vi sử dụng, hướng dẫn lắp đúng cách và các lưu ý từ chứng nhận hoặc kiểm định mà doanh nghiệp đang có.",
+        q: "Will this product affect the helmet’s original safety structure?",
+        a: "Absolutely not. UniqHelm is designed as an interior accessory layer that works with the helmet’s existing inner padding. It does not modify the outer shell or the original EPS impact-absorbing layer. Its purpose is to improve fit, stability, and overall comfort.",
       },
       {
-        q: "AI sizing hoạt động như thế nào?",
-        a: "Người dùng thực hiện scan theo hướng dẫn. Hệ thống phân tích ảnh hoặc dữ liệu đo để gợi ý size liner. Ở bản frontend này, phần AI được mô phỏng UI/UX đẹp mắt để bạn kết nối model thật sau.",
+        q: "How does the AI sizing system work?",
+        a: "Our AI sizing system measures the distance from temple to temple to estimate skull width and recommend the most suitable liner size. This helps reduce guesswork and makes it easier to choose a better-fitting option.",
       },
       {
-        q: "Website có bán hàng trực tiếp không?",
-        a: "Không. Website đóng vai trò giới thiệu sản phẩm, kể câu chuyện thương hiệu, giải thích công nghệ và sau đó dẫn người dùng sang sàn thương mại điện tử để mua.",
+        q: "Can I purchase directly from the website?",
+        a: "No. The website serves as a place to showcase the product, share the brand story, explain the technology, and guide users to online marketplaces to complete their purchase.",
       },
       {
-        q: "Có thể dùng cho mọi loại mũ không?",
-        a: "Bạn nên mô tả rõ các dòng mũ tương thích, các kích cỡ áp dụng và các trường hợp không khuyến nghị sử dụng để tăng độ tin cậy.",
+        q: "Is it compatible with all types of helmets?",
+        a: "Yes. Our product is designed with a flexible modular structure that is compatible with most popular helmet types on the market, from full-face and open-face to half helmets, including brands such as AGV, Shoei, LS2, Royal, and Andes.",
       },
     ],
   },
@@ -248,7 +295,7 @@ export const homepageContent = {
     eyebrow: "Testimonials",
     title: "Early reactions that build trust",
     description:
-      "Even before you have large-scale customer proof, this section helps communicate confidence through early feedback and pilot reactions.",
+      "Trước khi trở thành một giải pháp thương mại, UniqHelm đã đồng hành cùng những biker thực thụ trong các đợt thử nghiệm giới hạn. Đây là những gì họ cảm nhận về bên trong chiếc mũ bảo hiểm.",
     items: [
       {
         name: "Pilot User",

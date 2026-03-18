@@ -1,68 +1,55 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle2, Gauge, Layers3, Sparkles } from "lucide-react";
-import GlassCard from "@/components/ui/glass-card";
-import SectionHeading from "@/components/ui/section-heading";
+import { Check, Settings, BadgeCheck, Headphones } from "lucide-react";
+import { homepageContent } from "@/data/homepage-content";
 
-const benefitItems = [
-  {
-    icon: Layers3,
-    title: "Softer long-wear experience",
-    description:
-      "Designed to improve comfort during long rides, daily commuting, and continuous helmet use.",
-  },
-  {
-    icon: Gauge,
-    title: "More refined fit feeling",
-    description:
-      "Supports a more stable and premium-feeling interior fit through thickness options.",
-  },
-  {
-    icon: Sparkles,
-    title: "More premium product story",
-    description:
-      "Helps position the brand as a comfort-tech innovation instead of a simple accessory.",
-  },
-  {
-    icon: CheckCircle2,
-    title: "A modern recommendation flow",
-    description:
-      "AI sizing creates a more guided and confidence-driven user experience before purchase.",
-  },
-];
+const iconMap = [Check, Settings, BadgeCheck, Headphones];
 
 export default function ProductBenefitsSection() {
+  const content = homepageContent.productBenefits;
+
   return (
     <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-      <div className="space-y-10">
-        <SectionHeading
-          eyebrow="Benefits"
-          title="Why visitors should care within the first 10 seconds"
-          description="A strong website should explain not just what the product is, but why it matters immediately."
-        />
+      <div className="space-y-14">
+        <div className="mx-auto max-w-4xl text-center">
+          <div className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-700">
+            {content.eyebrow}
+          </div>
 
-        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
-          {benefitItems.map((item, idx) => {
-            const Icon = item.icon;
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 md:text-5xl">
+            {content.title}
+          </h2>
+
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-600 md:text-base">
+            {content.description}
+          </p>
+        </div>
+
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+          {content.items.map((item, idx) => {
+            const Icon = iconMap[idx];
 
             return (
               <motion.div
                 key={item.title}
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.25 }}
                 transition={{ duration: 0.45, delay: idx * 0.08 }}
+                className="text-center"
               >
-                <GlassCard className="h-full p-6">
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-cyan-400/20 bg-cyan-400/10 text-cyan-300">
-                    <Icon className="h-5 w-5" />
-                  </div>
-                  <h3 className="mt-4 text-lg font-semibold text-slate-900">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-7 text-slate-600">
-                    {item.description}
-                  </p>
-                </GlassCard>
+                <div className="mx-auto flex h-16 w-16 items-center justify-center text-cyan-700">
+                  <Icon className="h-10 w-10 stroke-[1.8]" />
+                </div>
+
+                <h3 className="mx-auto mt-5 max-w-[220px] text-2xl font-semibold leading-tight text-slate-900">
+                  {item.title}
+                </h3>
+
+                <p className="mx-auto mt-4 max-w-[240px] text-sm leading-7 text-slate-600">
+                  {item.description}
+                </p>
               </motion.div>
             );
           })}

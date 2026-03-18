@@ -2,7 +2,7 @@ import HeroSection from "@/components/sections/hero-section";
 import HighlightsSection from "@/components/sections/highlights-section";
 import ProductStorySection from "@/components/sections/product-story-section";
 import AISizingSection from "@/components/sections/ai-sizing-section";
-import MaterialsSection from "@/components/sections/materials-section";
+import ImplementationProcessSection from "@/components/sections/implementation-process-section";
 import CertificatesSection from "@/components/sections/certificates-section";
 import MarketplaceSection from "@/components/sections/marketplace-section";
 import FAQSection from "@/components/sections/faq-section";
@@ -25,7 +25,7 @@ export default function HomePage() {
         <ProductStorySection />
         <ProductBenefitsSection />
         <AISizingSection />
-        <MaterialsSection />
+        <ImplementationProcessSection/>
         <CertificatesSection />
         <TestimonialsSection />
         <MarketplaceSection />

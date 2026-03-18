@@ -1,83 +1,32 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Brain, Camera, Play } from "lucide-react";
+import { ArrowRight, Brain, Play } from "lucide-react";
+import Image from "next/image";
 import GlassCard from "@/components/ui/glass-card";
 import { homepageContent } from "@/data/homepage-content";
 
-function FakePhoneMockup() {
-  const content = homepageContent.hero.mockup;
-
+function HeroProductVisual() {
   return (
     <motion.div
       initial={{ opacity: 0, y: 24 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.7 }}
-      className="relative mx-auto w-full max-w-sm"
+      className="relative mx-auto w-full max-w-xl"
     >
-      <div className="absolute inset-0 rounded-[2.5rem] bg-cyan-200/70 blur-2xl" />
-      <div className="relative rounded-[2.5rem] border border-slate-200 bg-slate-50/90 p-3 shadow-2xl shadow-slate-300/40">
-        <div className="rounded-[2rem] border border-slate-200 bg-gradient-to-b from-white to-slate-50 p-4">
-          <div className="mb-4 flex items-center justify-between">
-            <div>
-              <div className="text-xs text-slate-500">{content.eyebrow}</div>
-              <div className="text-sm font-medium text-slate-900">
-                {content.title}
-              </div>
-            </div>
-            <div className="rounded-full border border-cyan-200 bg-cyan-50 px-2 py-1 text-[10px] font-medium text-cyan-700">
-              {content.live}
-            </div>
-          </div>
+      <div className="absolute -left-8 top-12 h-36 w-36 rounded-full bg-cyan-200/45 blur-3xl" />
+      <div className="absolute right-0 top-0 h-44 w-44 rounded-full bg-fuchsia-200/40 blur-3xl" />
+      <div className="absolute bottom-[8%] left-[28%] h-36 w-36 rounded-full bg-pink-200/30 blur-3xl" />
 
-          <div className="relative overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white p-4">
-            <div className="aspect-[4/5] rounded-[1.25rem] border border-dashed border-cyan-300 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.16),transparent_40%),linear-gradient(180deg,rgba(248,250,252,1),rgba(240,249,255,1))]">
-              <div className="flex h-full flex-col items-center justify-center gap-4">
-                <div className="relative flex h-28 w-28 items-center justify-center rounded-full border border-slate-200 bg-slate-50">
-                  <Camera className="h-8 w-8 text-cyan-600" />
-                  <div className="absolute inset-2 rounded-full border border-cyan-300" />
-                </div>
-
-                <div className="text-center">
-                  <div className="text-sm font-medium text-slate-900">
-                    {content.alignmentTitle}
-                  </div>
-                  <div className="mt-1 text-xs text-slate-500">
-                    {content.alignmentDescription}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-4 grid grid-cols-2 gap-3 text-xs">
-              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-3">
-                <div className="text-slate-500">{content.predictedSize}</div>
-                <div className="mt-1 text-base font-semibold text-slate-900">
-                  {content.predictedValue}
-                </div>
-              </div>
-              <div className="rounded-2xl border border-slate-200 bg-slate-50 p-3">
-                <div className="text-slate-500">{content.confidence}</div>
-                <div className="mt-1 text-base font-semibold text-slate-900">
-                  {content.confidenceValue}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-4 grid grid-cols-3 gap-2 text-center text-[10px]">
-            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-2 text-slate-500">
-              {content.capture}
-            </div>
-            <div className="rounded-2xl border border-cyan-200 bg-cyan-50 p-2 text-cyan-700">
-              {content.analyze}
-            </div>
-            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-2 text-slate-500">
-              {content.result}
-            </div>
-          </div>
-        </div>
+      <div className="relative aspect-[4/4.2] w-full">
+        <Image
+          src="/images/pic1.png"
+          alt="UniqHelm product visual"
+          fill
+          priority
+          className="object-contain scale-[1.1]"
+        />
       </div>
     </motion.div>
   );
@@ -89,25 +38,16 @@ export default function HeroSection() {
 
   return (
     <section id="top" className="relative">
-      <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 lg:grid-cols-[1.15fr_0.85fr] lg:px-8 lg:py-28">
+      <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:py-24">
         <div className="space-y-8">
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="inline-flex items-center gap-2 rounded-full border border-cyan-200 bg-cyan-50 px-4 py-2 text-xs font-medium text-cyan-700"
-          >
-            <Brain className="h-4 w-4" />
-            {content.badge}
-          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.05 }}
-            className="space-y-6"
+            className="space-y-5"
           >
-            <h1 className="max-w-4xl text-5xl font-semibold leading-[1.02] tracking-tight text-slate-900 md:text-7xl">
+            <h1 className="max-w-4xl text-4xl font-bold leading-[1.05] tracking-tight text-slate-900 md:text-6xl">
               {content.titlePrefix}{" "}
               <span className="bg-gradient-to-r from-cyan-600 via-sky-500 to-fuchsia-600 bg-clip-text text-transparent">
                 {content.highlight}
@@ -163,7 +103,7 @@ export default function HeroSection() {
         </div>
 
         <div className="relative">
-          <FakePhoneMockup />
+          <HeroProductVisual />
         </div>
       </div>
     </section>

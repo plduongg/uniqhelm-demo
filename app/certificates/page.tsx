@@ -1,57 +1,94 @@
+import Image from "next/image";
+import { FileText } from "lucide-react";
 import GlassCard from "@/components/ui/glass-card";
-import SectionHeading from "@/components/ui/section-heading";
-import { BadgeCheck, FileText } from "lucide-react";
-
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Certificates | UniqHelm",
   description:
-    "Explore validation, material safety, and trust-building documentation for the UniqHelm product.",
+    "Explore product validation, material safety, and trust-building documentation behind UniqHelm.",
 };
 
 const certificateItems = [
   {
     title: "Material Safety",
     description:
-      "Documentation related to material validation, origin, and safety references.",
+      "Documentation that highlights material standards, safety considerations, and verified sourcing behind the product.",
+    image: "/images/certificate-1.png",
+    href: "#",
   },
   {
     title: "Product Validation",
     description:
-      "Internal or external evaluation showing how the liner performs in fit and comfort contexts.",
+      "A dedicated area for internal testing, technical standards, inspection reports, and fit-related data that support product credibility.",
+    image: "/images/certificate-2.png",
+    href: "#",
   },
   {
     title: "Manufacturing Quality",
     description:
-      "Quality control, production process, and manufacturing assurance materials.",
+      "An overview of production processes, quality control practices, and manufacturing capabilities where applicable.",
+    image: "/images/certificate-3.png",
+    href: "#",
   },
 ];
 
 export default function CertificatesPage() {
   return (
-    <main className="min-h-screen bg-slate-50 px-6 py-20 text-slate-900 lg:px-8">
-      <div className="mx-auto max-w-7xl space-y-10">
-        <SectionHeading
-          eyebrow="Certificates"
-          title="Trust is built through clarity, not just documents"
-          description="Use this page to present every certificate in a readable and trustworthy format instead of only uploading raw files."
-        />
+    <main className="min-h-screen bg-slate-50 px-6 py-12 text-slate-900 lg:px-8">
+      <div className="mx-auto max-w-7xl space-y-12">
+        <div className="mx-auto max-w-4xl text-center">
+          <div className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-700">
+            Certifications & Trust
+          </div>
+
+          <h1 className="mt-4 text-4xl font-bold tracking-tight text-slate-900 md:text-6xl">
+            More Than Documents
+            <br className="hidden md:block" />
+            Turn Certification Into Trust
+          </h1>
+
+          <p className="mx-auto mt-5 max-w-3xl text-sm leading-7 text-slate-600 md:text-base">
+            This section demonstrates how certifications and supporting documents
+            can be presented in a clearer, more professional format — with
+            structured titles, concise explanations, and direct calls to action.
+          </p>
+        </div>
 
         <div className="grid gap-5 md:grid-cols-3">
           {certificateItems.map((item) => (
-            <GlassCard key={item.title} className="p-6">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-emerald-400/20 bg-emerald-400/10 text-emerald-300">
-                <BadgeCheck className="h-5 w-5" />
+            <GlassCard
+              key={item.title}
+              className="h-full overflow-hidden rounded-[1.75rem] p-0"
+            >
+              <div className="p-4 pb-0">
+                <div className="relative aspect-[1.45/0.62] w-full overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
               </div>
-              <h3 className="mt-4 text-xl font-semibold">{item.title}</h3>
-              <p className="mt-3 text-sm leading-7 text-slate-600">
-                {item.description}
-              </p>
-              <button className="mt-5 inline-flex items-center gap-2 rounded-full border border-slate-200 px-4 py-2 text-sm text-slate-700">
-                View document
-                <FileText className="h-4 w-4" />
-              </button>
+
+              <div className="p-6 pt-5">
+                <h2 className="text-2xl font-semibold text-slate-900">
+                  {item.title}
+                </h2>
+
+                <p className="mt-3 text-sm leading-7 text-slate-600">
+                  {item.description}
+                </p>
+
+                <a
+                  href={item.href}
+                  className="mt-6 inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-100"
+                >
+                  View Document
+                  <FileText className="h-4 w-4" />
+                </a>
+              </div>
             </GlassCard>
           ))}
         </div>

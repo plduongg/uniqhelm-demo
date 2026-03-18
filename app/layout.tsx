@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 import { Be_Vietnam_Pro } from "next/font/google";
 import Header from "@/components/layout/header";
 import Footer from "@/components/layout/footer";
+import { siteContent } from "@/data/site";
 
 export const metadata: Metadata = {
   title: "UniqHelm | Comfort solution for helmet users",
-  description:
-    "PU Foam helmet liner with AI-assisted sizing for better comfort and fit.",
+  description: siteContent.brand.description,
 };
 
 const beVietnamPro = Be_Vietnam_Pro({
@@ -24,15 +24,18 @@ export default function RootLayout({
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "UniqHelm",
+    name: siteContent.brand.name,
     url: "https://your-domain.com",
     logo: "https://your-domain.com/images/logo.png",
-    description:
-      "Comfort solution for helmet users with PU Foam liner and AI-assisted sizing.",
+    description: siteContent.brand.description,
   };
 
   return (
-    <html lang="vi" className={beVietnamPro.variable}>
+    <html
+      lang="vi"
+      className={beVietnamPro.variable}
+      suppressHydrationWarning
+    >
       <body className="bg-slate-50 font-sans text-slate-900">
         <script
           type="application/ld+json"
