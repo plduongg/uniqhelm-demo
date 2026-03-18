@@ -14,29 +14,29 @@ const problemBlocks = [
   {
     icon: Sparkles,
     title: "The problem",
-    text: "Nhiều người dùng phải đội mũ bảo hiểm trong thời gian dài nhưng vẫn xem cảm giác đau đầu, cấn và khó chịu là điều bình thường.",
+    text: "Many helmet users wear their helmets for extended periods yet still accept pressure, discomfort, and headaches as a normal part of the experience.",
   },
   {
     icon: Target,
     title: "The mission",
-    text: "UniqHelm được tạo ra để mang lại trải nghiệm đội mũ thoải mái hơn, chỉn chu hơn và có chủ đích hơn cho người dùng.",
+    text: "UniqHelm was created to deliver a more comfortable, refined, and intentional helmet-wearing experience for everyday users.",
   },
   {
     icon: ShieldCheck,
     title: "The trust layer",
-    text: "Giải thích chất liệu, hướng dẫn tương thích và khu vực chứng nhận giúp khách hàng yên tâm hơn trước khi mua.",
+    text: "Material transparency, compatibility guidance, and clear certification references help customers feel informed and confident before purchasing.",
   },
   {
     icon: Brain,
     title: "The innovation layer",
-    text: "AI sizing biến một quyết định chọn phụ kiện đơn giản thành trải nghiệm hiện đại, có hướng dẫn và đáng tin cậy hơn.",
+    text: "AI sizing transforms a simple accessory decision into a more guided, modern, and reliable user experience.",
   },
 ];
 
 const aiPoints = [
-  "Giải thích vì sao AI không chỉ là hiệu ứng marketing",
-  "Mô tả luồng scan và cách hiển thị kết quả",
-  "Tạo nền tảng để kết nối model thật sau này",
+  "Explain why AI is more than a marketing effect",
+  "Show how the scan flow works and how results are presented",
+  "Create a strong foundation for integrating a real model later",
 ];
 
 export default function AboutPage() {
@@ -58,18 +58,18 @@ export default function AboutPage() {
             <div className="absolute inset-0 flex items-center justify-center px-6 text-center">
               <div className="max-w-3xl text-white">
                 <div className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-200">
-                  Câu chuyện thương hiệu
+                  Brand Story
                 </div>
 
                 <h1 className="mt-4 text-4xl font-bold tracking-tight md:text-6xl">
-                  Sứ mệnh của{" "}
+                  The Mission of{" "}
                   <span className="text-blue-300">UniqHelm</span>
                 </h1>
 
                 <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-slate-200 md:text-base">
-                  Chúng tôi không chỉ tạo ra một phụ kiện cho mũ bảo hiểm. Chúng tôi
-                  muốn nâng tầm trải nghiệm đội mũ bằng sự thoải mái, fit tốt hơn và
-                  công nghệ hỗ trợ lựa chọn thông minh hơn.
+                  We are not simply building an accessory for helmets. We aim to
+                  elevate the helmet-wearing experience through better comfort,
+                  improved fit, and smarter technology-assisted selection.
                 </p>
 
                 <div className="mt-6">
@@ -77,7 +77,7 @@ export default function AboutPage() {
                     href="/measure"
                     className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-slate-800"
                   >
-                    Khám phá ngay
+                    Open AI Sizing
                     <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>
@@ -91,10 +91,10 @@ export default function AboutPage() {
           <div className="space-y-6">
             <div>
               <div className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-700">
-                Brand story
+                Brand Story
               </div>
               <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-900 md:text-5xl">
-                Vấn đề chúng tôi giải quyết
+                The Problem We Set Out to Solve
               </h2>
             </div>
 
@@ -202,13 +202,14 @@ export default function AboutPage() {
             </div>
 
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 md:text-5xl">
-              Công nghệ &amp; Đột phá AI
+              Technology &amp; AI Innovation
             </h2>
 
             <p className="max-w-2xl text-sm leading-8 text-slate-600 md:text-base">
-              Chúng tôi ứng dụng AI như một lớp công nghệ bổ trợ để việc chọn liner
-              trở nên rõ ràng và hiện đại hơn. Mục tiêu không phải là tạo hiệu ứng,
-              mà là giúp người dùng có quyết định tự tin hơn trước khi mua.
+              We use AI as a supportive technology layer to make liner selection
+              clearer, more modern, and more reliable. The goal is not to create
+              a visual gimmick, but to help users make a more confident decision
+              before purchase.
             </p>
 
             <div className="space-y-3">
@@ -225,7 +226,7 @@ export default function AboutPage() {
                 href="/measure"
                 className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-5 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-100"
               >
-                View more
+                View More
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
@@ -240,10 +241,10 @@ export default function AboutPage() {
             </h2>
 
             <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600 md:text-base">
-              The website should feel like a startup brand platform: product,
-              story, measurement, trust and emotional connection all working
-              together. Đó là điều khiến khách hàng nhớ đến thương hiệu thay vì chỉ
-              xem đây là một phụ kiện đơn thuần.
+              The website should feel like a startup brand platform where
+              product, story, measurement, trust, and emotional connection work
+              together. That is what makes customers remember the brand rather
+              than see it as just another simple accessory.
             </p>
 
             <div className="mt-6 flex flex-col gap-3 sm:flex-row">
